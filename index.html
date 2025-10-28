@@ -3,39 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Usuário</title>
+    <title>Organização de Voluntários - Início</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
-            <h1>Usuário</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="projeto.html">Projeto</a></li>
-                    <li><a href="cadastro.html">Cadastro</a></li>
-                </ul>
-            </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Quem somos</h2>
-            <p>Somos uma organização sem fins lucrativos que atua com animais abandonados</p>
-            <img src="imagens/cachorro.jpg" alt="Voluntarios em ação">
-        </section>
-        <section>
-            <h2>Missão da ONG Amigão</h2>
-            <p>Promover dignidade e oportunidade de acolhimento aos animais abandonados</p>
-        </section>
-        <section>
-            <h2>Contato da ONG Amigão</h2>
-            <adress>
-                <p>Endereço:Rua passagem Bingo,123 - Bairro Bela Vista São Paulo/SP</p>
-                <p>Telefone:(99)99999-9999</p>
-                <p>E-mail:Contato@orgamigao.org.br</p>
-            </adress>
+        <nav>
+            <div class="logo">&#128153; Voluntários</div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul id="navMenu">
+                <li><a href="index.html" class="active">Início</a></li>
+                <li><a href="projeto.html">Projetos</a></li>
+                <li><a href="cadastro.html">Seja Voluntário</a></li>
 
-        </section>
-    </main>
-    <footer>&copy; 2025</footer>
-</body>
-</html>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Transforme Vidas com Voluntariado</h1>
+            <p>Somos uma organização dedicada à inclusão social e ao atendimento de famílias. Junte-se a nós e faça a diferença!</p>
+            <a href="cadastro.html" class="btn-primary">Quero Ser Voluntário</a>
+        </div>
+    </section>
+
+    <!-- Quem Somos -->
+    <section class="about">
+        <h2>Quem Somos</h2>
+        <p>Somos uma organização sem fins lucrativos que atua no atendimento de famílias em inclusão social, promovendo dignidade, esperança e oportunidades para quem mais precisa.</p>
+        
+    </section>  
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Organização de Voluntários. Todos os direitos reservados.</p>
+     <p>Feito com &#10084;&#65039; para transformar vidas</p>
+    </footer>
+
+    <script src="script.js"></script>
